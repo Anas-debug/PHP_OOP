@@ -6,6 +6,12 @@
         public $name = "Jordan";
         private $phone = "12345678910";
 
+        public function __call($name, $arguments){
+            // Implements the __call method.
+            var_dump($name, $arguments);
+
+        }
+
         public function getPhone(){
             return $this->phone;
         }
