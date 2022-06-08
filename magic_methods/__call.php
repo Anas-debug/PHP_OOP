@@ -8,12 +8,20 @@
 
         public function __call($name, $arguments){
             // Implements the __call method.
-            var_dump($name, $arguments);
+            // var_dump($name, $arguments);
+
+            if($name === 'getMobilePhone'){
+                return $this->getPhone();
+            }
 
         }
 
         public function getPhone(){
             return $this->phone;
+        }
+
+        public function setPhone($phone){
+            $this->phone = $phone;
         }
     }
 
