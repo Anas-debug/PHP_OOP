@@ -1,6 +1,6 @@
 <?php
 
-// It includes both the __get and __set magic methods
+// It includes the __set magic method
 
     class Person{
         public $name = "Jordan";
