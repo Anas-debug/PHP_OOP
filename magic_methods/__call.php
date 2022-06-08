@@ -6,10 +6,10 @@
         public $name = "Jordan";
         private $phone = "12345678910";
 
-        public function __get($propName){
-            if($propName === 'username'){
-                return $this->name;
-            }
-            return "Property \"$propName\" does not exist";
+        public function getPhone(){
+            return $this->phone;
         }
     }
+
+$person1 = new Person();
+echo $person1->getPhone();
